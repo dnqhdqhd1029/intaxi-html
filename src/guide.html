@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="guide-container pxy-10"><h2><a target="_blank" href="https://hwik.atlassian.net/wiki/spaces/AIO/pages/edit-v2/2287960068">디자인가이드 바로가기</a> </h2><h2><a target="_blank" href="https://www.figma.com/file/DhhrbdUtd8OPIVOBRVZKAO/%5BINT%5D-phase2_passengerAPP_design?node-id=32%3A2&amp;t=mkRjvGlB78oSltjV-1">피그마 바로가기</a> </h2><h2>css 파일관리</h2><ul class="scss-guide"><li><span>style.scss </span>  프로젝트 관련 scss<ul><li><span>font.scss</span>    폰트관련</li><li><span>reset.scss</span>  모든태그 기본으로 </li><li><span>utilities.scss</span> 프로젝트별  SIZE / COLOR 설정</li><li><span>form.scss</span> input,checkbox ,radio,botton 등 기본설정 </li><li><span>common.scss</span> 자주쓰는 css 모음</li></ul></li><li><span>style-phone.scss</span> 반응형일때</li></ul><hr><h2>icon</h2><i class="ic ic-xxl"></i><i class="ic ic-xl"></i><i class="ic ic-lg"></i><i class="ic ic-md"></i><i class="ic ic-sm"></i><i class="ic ic-xs"></i><pre>&lt;i className="ic ic-xxl" /&gt;
+                &lt;i className="ic ic-xl" /&gt;
+                &lt;i className="ic ic-lg" /&gt;
+                &lt;i className="ic ic-md" /&gt;
+                &lt;i className="ic ic-sm" /&gt;
+                &lt;i className="ic ic-xs" /&gt;</pre><h2>checkbox</h2><div><label><input type="checkbox"> <span>off</span></label><label><input type="checkbox" checked=""> <span>on</span></label><label><input type="checkbox" disabled=""> <span>disabled</span></label></div><pre>&lt;label&gt;&lt;input type="checkbox" /&gt; &lt;span&gt;off&lt;/span&gt;&lt;/label&gt;
+                    &lt;label&gt;&lt;input type="checkbox" checked /&gt; &lt;span&gt;on&lt;/span&gt;&lt;/label&gt;
+                    &lt;label&gt;&lt;input type="checkbox" disabled /&gt; &lt;span&gt;disabled&lt;/span&gt;&lt;/label&gt;</pre><h2>radio</h2><div><label><input type="radio"> <span>off</span></label><label><input type="radio" checked=""> <span>on</span></label><label><input type="radio" disabled=""> <span>disabled</span></label></div><pre>&lt;label&gt;&lt;input type="radio" /&gt; &lt;span&gt;off&lt;/span&gt;&lt;/label&gt;
+                    &lt;label&gt;&lt;input type="radio" checked /&gt; &lt;span&gt;on&lt;/span&gt;&lt;/label&gt;
+                    &lt;label&gt;&lt;input type="radio" disabled /&gt; &lt;span&gt;disabled&lt;/span&gt;&lt;/label&gt;</pre><h2>.toggle-switch</h2><div><label class="toggle-switch"><input role="switch" type="checkbox"><span>알람</span></label><label class="toggle-switch"><input role="switch" type="checkbox" disabled=""><span>알람 (비활성화)</span></label></div><pre>&lt;label className="toggle-switch"&gt;
+                        &lt;input role="switch" type="checkbox" /&gt;
+                        &lt;span&gt;알람&lt;/span&gt;
+                    &lt;/label&gt;
+
+                    &lt;label className="toggle-swich"&gt;
+                        &lt;input role="switch" type="checkbox" disabled /&gt;
+                        &lt;span&gt;알람 (비활성화)&lt;/span&gt;
+                    &lt;/label&gt;</pre><h2>.grade-content</h2><div><div class="grade-content"><input type="radio" name="rating" id="rate1" value="5"><label for="rate1"> 1점</label><input type="radio" name="rating" id="rate2" value="4"><label for="rate2"> 2점</label><input type="radio" name="rating" id="rate3" value="3"><label for="rate3"> 3점</label><input type="radio" name="rating" id="rate4" value="2"><label for="rate4"> 4점</label><input type="radio" name="rating" id="rate5" value="1"><label for="rate5"> 5점</label></div></div><pre>&lt;div className="grade-content"&gt;
+                        &lt;input type="radio" name="rating" value="5" id="rate1" /&gt;&lt;label htmlFor="rate1"&gt; 1점&lt;/label&gt;
+                        &lt;input type="radio" name="rating" value="4" id="rate2" /&gt;&lt;label htmlFor="rate2"&gt; 2점&lt;/label&gt;
+                        &lt;input type="radio" name="rating" value="3" id="rate3" /&gt;&lt;label htmlFor="rate3"&gt; 3점&lt;/label&gt;
+                        &lt;input type="radio" name="rating" value="2" id="rate4" /&gt;&lt;label htmlFor="rate4"&gt; 4점&lt;/label&gt;
+                        &lt;input type="radio" name="rating" value="1" id="rate5" /&gt;&lt;label htmlFor="rate5"&gt; 5점&lt;/label&gt;
+                    &lt;/div&gt;</pre><h2>type="text"</h2><div><input type="text" placeholder="이름을 입력하세요"></div><pre>&lt;input type="text" placeholder="이름을 입력하세요" /&gt;</pre><div><input type="password" class="focus" placeholder="비밀번호를 입력하세요"></div><pre>&lt;input type="password" className="focus" placeholder="비밀번호를 입력하세요" /&gt;</pre><div><input type="password" class="error" placeholder="비밀번호를 입력하세요"><small class="text-danger">error message</small></div><pre>&lt;input type="password" className="error" placeholder="비밀번호를 입력하세요" /&gt;
+                    &lt;small className="text-danger"&gt;error message&lt;/small&gt;</pre><div><input type="password" placeholder="비밀번호를 입력하세요" disabled=""></div><pre>&lt;input type="password" placeholder="비밀번호를 입력하세요" disabled /&gt;</pre><div><input type="tel" class="inline" placeholder="010"> &nbsp;<input type="tel" class="inline" placeholder="010"> &nbsp;<input type="tel" class="inline" placeholder="010"></div><pre>&lt;input type="tel" className="inline" placeholder="010" /&gt;
+                    &lt;input type="tel" className="inline" placeholder="010" /&gt;
+                    &lt;input type="tel" className="inline" placeholder="010" /&gt;</pre><h2>textarea</h2><div><textarea placeholder="내용을 입력해 주세요"></textarea></div><pre>&lt;textarea placeholder="내용을 입력해 주세요"&gt;&lt;/textarea&gt;</pre><h2>.select-content select</h2><div class="select-content "><select><option>선택하세요</option><option>선택하세요</option><option>선택하세요</option><option>선택하세요</option></select></div><div class="select-content select-pull"><select><option>선택하세요</option><option>선택하세요</option><option>선택하세요</option><option>선택하세요</option></select></div><pre>&lt;div className="select-content "&gt;
+                    &lt;select&gt;
+                        &lt;option&gt;선택하세요&lt;/option&gt;
+                        &lt;option&gt;선택하세요&lt;/option&gt;
+                        &lt;option&gt;선택하세요&lt;/option&gt;
+                        &lt;option&gt;선택하세요&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+
+                &lt;div className="select-content select-pull"&gt;
+                    &lt;select&gt;
+                        &lt;option&gt;선택하세요&lt;/option&gt;
+                        &lt;option&gt;선택하세요&lt;/option&gt;
+                        &lt;option&gt;선택하세요&lt;/option&gt;
+                        &lt;option&gt;선택하세요&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;</pre><h2>color</h2><div><button class="btn btn-xl bg-primary "> primary</button><button class="btn btn-lg bg-success "> success</button><button class="btn btn-md bg-warning"> warning</button><button class="btn btn-sm bg-danger"> danger</button><button class="btn btn-xs bg-dark"> dark</button><button class="btn btn-xs bg-info"> info</button></div><pre>&lt;button className="btn btn-xl bg-primary "&gt; primary&lt;/button&gt;
+                    &lt;button className="btn btn-lg bg-success "&gt; success&lt;/button&gt;
+                    &lt;button className="btn btn-md bg-warning"&gt; warning&lt;/button&gt;
+                    &lt;button className="btn btn-sm bg-danger"&gt; danger&lt;/button&gt;
+                    &lt;button className="btn btn-xs bg-dark"&gt; dark&lt;/button&gt;
+                    &lt;button className="btn btn-xs bg-info"&gt; info&lt;/button&gt;</pre><div><span class="text-primary "> primary</span><span class="text-success "> success</span><span class="text-warning"> warning</span><span class="text-danger"> danger</span><span class="text-dark"> dark</span><span class="text-info"> info</span></div><pre>&lt;span className="text-primary "&gt; primary&lt;/span&gt;
+                    &lt;span className="text-success "&gt; success&lt;/span&gt;
+                    &lt;span className="text-warning"&gt; warning&lt;/span&gt;
+                    &lt;span className="text-danger"&gt; danger&lt;/span&gt;
+                    &lt;span className="text-dark"&gt; dark&lt;/span&gt;
+                    &lt;span className="text-info"&gt; info&lt;/span&gt;</pre><h2>button</h2><div><button class="btn btn-xl bg-primary "> btn-xl</button><button class="btn btn-lg bg-success "> btn-lg</button><button class="btn btn-md bg-warning"> btn-md</button><button class="btn btn-sm bg-danger"> btn-sm</button><button class="btn btn-xs bg-dark"> btn-sm</button></div><pre>&lt;button className="btn btn-xl bg-primary "&gt; btn-xl&lt;/button&gt;
+                    &lt;button className="btn btn-lg bg-success "&gt; btn-lg&lt;/button&gt;
+                    &lt;button className="btn btn-md bg-warning"&gt; btn-md&lt;/button&gt;
+                    &lt;button className="btn btn-sm bg-danger"&gt; btn-sm&lt;/button&gt;
+                    &lt;button className="btn btn-xs bg-dark"&gt; btn-sm&lt;/button&gt;</pre><h2>.radius</h2><div><button class="btn btn-xl bg-primary radius "> btn-xl</button><button class="btn btn-lg bg-success radius "> btn-lg</button><button class="btn btn-md bg-warning radius-half"> btn-md</button><button class="btn btn-sm bg-danger radius-half"> btn-sm</button><button class="btn btn-xs bg-dark radius-half"> btn-sm</button></div><pre>&lt;button className="btn btn-xl bg-primary radius "&gt; btn-xl&lt;/button&gt;
+                    &lt;button className="btn btn-lg bg-success radius "&gt; btn-lg&lt;/button&gt;
+                    &lt;button className="btn btn-md bg-warning radius-half"&gt; btn-md&lt;/button&gt;
+                    &lt;button className="btn btn-sm bg-danger radius-half"&gt; btn-sm&lt;/button&gt;
+                    &lt;button className="btn btn-xs bg-dark radius-half"&gt; btn-sm&lt;/button&gt;</pre><h2>.btn-pull</h2><div><button class="btn btn-xl bg-primary btn-pull "> btn-xl</button></div><pre>&lt;button className="btn btn-xl bg-primary btn-pull "&gt; btn-xl&lt;/button&gt;</pre><div><button class="btn btn-lg bg-success btn-pull radius-half "> btn-lg</button></div><pre>&lt;button className="btn btn-lg bg-success btn-pull radius-half "&gt; btn-lg&lt;/button&gt;</pre><div><button class="btn btn-md bg-warning btn-pull radius"> btn-md</button></div><pre>&lt;button className="btn btn-md bg-warning btn-pull radius"&gt; btn-md&lt;/button&gt;</pre><div><button class="btn btn-sm bg-danger btn-pull"> btn-sm</button></div><pre>&lt;button className="btn btn-sm bg-danger btn-pull"&gt; btn-sm&lt;/button&gt;</pre><div><button class="btn btn-xs bg-dark btn-pull"> btn-sm</button></div><pre>&lt;button className="btn btn-xs bg-dark btn-pull"&gt; btn-sm&lt;/button&gt;</pre><div><button class="btn btn-xl bg-primary btn-pull btn-fixed "> btn-xl</button></div></div>
+</body>
+</html>
